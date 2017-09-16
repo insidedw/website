@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Basic style components -->
+    <link rel="stylesheet" href="../jui/jui/dist/ui.css"/>
+    <link rel="stylesheet" href="../jui/jui/dist/ui-dark.css"/>
+
+    <!-- Grid style components -->
+    <link rel="stylesheet" href="../jui/jui-grid/dist/grid.css"/>
+    <link rel="stylesheet" href="../jui/jui-grid/dist/grid-dark.css"/>
+
+    <!-- Required script files -->
+    <script src="../jui/jui-core/lib/jquery-1.8.0.min.js"></script>
+    <script src="../jui/jui-core/dist/core.min.js"></script>
+
+    <!-- Basic script components -->
+    <script src="../jui/jui/dist/ui.min.js"></script>
+
+    <!-- Grid script components -->
+    <script src="../jui/jui-grid/dist/grid.min.js"></script>
+
+    <!-- Chart script components -->
+    <script src="../jui/jui-chart/dist/chart.min.js"></script>
+
+    <script src="../js/vue.js"></script>
+    <script src="../js/dynamics.js"></script>
+</head>
+
+<style>
+    .identity {
+        font-size: 100px;
+        background-color: #00b3ee;
+    }
+
+    .character {
+        font-size: 50px;
+        background-color: #2aa11a;
+    }
+
+    .center {
+        position: relative;
+        width: 90%;
+        margin: 35px auto 0 auto !important;
+    }
+
+    .eachSectionSpace {
+        margin-bottom: 30px;
+    }
+
+    .jui .progress.simple.vertical.point {
+        height: 10px;
+        width: 30px;
+    }
+
+    .workDescription {
+        margin-left: 40px;
+        width: 200px;
+    }
+
+    .workDescription.child {
+        margin-left: 300px;
+        width: 400px;
+    }
+
+    .jui .progress .area .bar {
+        background: #3fff72;
+        border-radius: 5px;
+
+    }
+
+    .jui .progress .area .bar.period {
+        background: #3fff72;
+        width: 2px;
+        margin-left: 3px;
+    }
+
+    .jui .progress.simple.vertical.period {
+        height: 200px;
+    }
+</style>
+
+<body class="jui center" style="background-color: #1c1c1c">
+<div class="navbar fixed top">
+    <ul class="nav" id="mainNav">
+        <li><a href="#"><i class="icon-facebook"></i></a></li>
+        <li id="mainMenu"><a href="#main" v-on:click="activeMain">MAIN</a></li>
+        <li id="summaryMenu"><a href="#summary" v-on:click="activeSummary">SUMMARY</a></li>
+        <li id="portfolioMenu"><a href="#portfolio" v-on:click="activePortfolio">PORTFOLIO</a></li>
+        <li id="videosMenu"><a href="#videos" v-on:click="activeVideos">VIDEOS</a></li>
+    </ul>
+</div>
+<!--nav bar end-->
+
+<div id="main" class="eachSectionSpace"></div>
+<div class="row">
+    <div class="col col-12">
+        <div class="h1">
+            DAEWOONG KIM (CHUCK)
+        </div>
+        <br>
+        <div class="h3">
+            WEB DEVELOPER<br>
+        </div>
+        <div class="h5">
+            passionate about learning computer science <br>
+            interested in data science<br>
+            love Apple's product :)
+        </div>
+        <br>
+
+        <div class="h3">FAVORITE QUOTES</div>
+        <div class="h5">
+            But as for you,
+            continue in what you have learned and have become convinced of,
+            because you know those from whom you learned it
+            <br>
+            <small>2 Timothy 3:14-17</small>
+        </div>
+
+
+        <div id="percentageCounter"></div>
+    </div>
+</div>
+<hr/>
+<!--introduction end-->
+
+
+<div id="summary" class="eachSectionSpace"></div>
+<div class="row">
+    <div class="col col-12">
+        <div class="h1">Summary</div>
+        <div class="h3">
+            Education
+        </div>
+        <br>
+        <div class="h4">
+            Minnesota State University, Mankato
+        </div>
+        <div class="h5">
+            Bachelor of Science in Computer Information Technology, 2014 <br>
+            Minor degree in Mathematics
+        </div>
+        <br>
+        <div id="result"></div>
+        <div id="result2"></div>
+        <div id="result3"></div>
+    </div>
+</div>
+<hr/>
+<!--summary end-->
+
+<div id="portfolio" class="eachSectionSpace"></div>
+<div class="row">
+    <div class="col col-12">
+        <div class="h1">Portfolio</div>
+    </div>
+
+    <div class="col col-12">
+        <div id="progress_1" class="progress simple vertical point">
+            <div class="area">
+                <div class="bar"></div>
+            </div>
+            <div class="col col-6">
+                <div class="workDescription">
+                    <a onclick="showNaver()" style="cursor:pointer">
+                        <div class="h4">
+                            Sept 2016 - present
+                        </div>
+                        <div class="h5">
+                            NAVER <br>
+                            Back-End Web Developer <br>
+                            WAV <br>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col col-6">
+                <div id="naver" class="popover" style="display: none; margin-left: 250px; width: 300px;">
+                    <div class="head">NAVER Project</div>
+                    <div class="body">
+                        <div class="message">
+                            WAV <br>
+                            JAVA 8, Spring 4 <br>
+                            Redis, Mysql <br>
+                            Flume, Kafka, Storm, Hadoop
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="progress_2" class="progress simple vertical flat period">
+            <div class="area">
+                <div class="bar period" style="width: 2px; margin-left: 4px;"></div>
+            </div>
+        </div>
+        <div id="progress_3" class="progress simple vertical point">
+            <div class="area">
+                <div class="bar"></div>
+            </div>
+            <div class="col col-6">
+                <div class="workDescription">
+                    <a onclick="showKsign()" style="cursor:pointer">
+                        <div class="h4">June 2014 - Aug 2016</div>
+                        <div class="h5">
+                            KSign <br>
+                            Information Security Developer <br>
+                            SSO, EAM, IOT
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col col-6">
+                <div id="ksign" class="popover" style="display: none; margin-left: 250px; width: 300px;">
+                    <div class="head">Ksign Project</div>
+                    <div class="body">
+                        <div class="message">
+                            SSO
+                            <small>June 2014 - Aug 2016</small>
+                            <br>
+                            Developed duplicated login prevention <br>
+                            Developed sharing third party IDPs with Google <br>
+                            Maintain SSO Solution (Server and Agent) <br> <br>
+
+                            EAM
+                            <small>June 2014 - Aug 2016</small>
+                            <br>
+                            Developed ABAC (Attribute Based Access Control) <br>
+                            Developed Admin UI <br>
+                            Maintain EAM Solution (Server and Agent) <br> <br>
+
+                            OAuth 1.0a
+                            <small>Apr 2016</small>
+                            <br>
+                            Developed a prototype about Service Provider and Consumer <br><br>
+
+                            Authentication and Authorization Platforms in the IoT
+                            <small>Jan 2016 ~ Mar 2016</small>
+                            <br>
+                            A resource owner can protect their resource and control protected-resource access by arbitrary clients<br>
+                            Joined a part of information security<br>
+                            Developed a Authorization Service Provider based on UMA<br>
+                            Developed Restful API to communicate with a Resource Provider<br><br>
+
+                            K-ICT IoT OPEN LAB
+                            <small>Aug 2015 ~ Dec 2015</small>
+                            <br>
+                            A user is able to access and control different platforms' devices using only one application on smart phone<br>
+                            Joined a part of information security<br>
+                            Developed a Service Provider federating different platforms based on OAuth 2.0<br>
+                            Developed UI for a Service Provider<br>
+                            Developed API to communicate with a Service Provider<br><br>
+
+                            License Application
+                            <small>Apr 2015 ~ Jul 2015</small>
+                            <br>
+                            A permit from an authority to use solutions<br>
+                            Developed web-based License Provider to download license<br>
+                            Developed Statistic on License Provider<br>
+                            Developed API to read a license to verify authority<br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="progress_4" class="progress simple vertical flat period">
+            <div class="area">
+                <div class="bar period" style="width: 2px; margin-left: 4px;"></div>
+            </div>
+        </div>
+        <div id="progress_5" class="progress simple vertical point">
+            <div class="area">
+                <div class="bar"></div>
+            </div>
+            <div class="workDescription">
+                <a onclick="alert('a')" style="cursor:pointer">
+                    <div class="h4">Aug 2013 - May 2014</div>
+                    <div class="h5">
+                        Academic Computer Center <br>
+                        Student Consultant
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="progress_6" class="progress simple vertical flat period">
+            <div class="area">
+                <div class="bar period" style="width: 2px; margin-left: 4px;"></div>
+            </div>
+        </div>
+        <div id="progress_7" class="progress simple vertical point">
+            <div class="area">
+                <div class="bar"></div>
+            </div>
+            <div class="workDescription">
+                <a onclick="alert('a')" style="cursor:pointer">
+                    <div class="h4">Summer of 2013</div>
+                    <div class="h5">
+                        TEST ENC <br>
+                        Android Application Tester
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="progress_8" class="progress simple vertical flat period">
+            <div class="area">
+                <div class="bar period" style="width: 2px; margin-left: 4px;"></div>
+            </div>
+        </div>
+        <div id="progress_9" class="progress simple vertical point">
+            <div class="area">
+                <div class="bar"></div>
+            </div>
+            <div class="workDescription">
+                <a onclick="alert('a')" style="cursor:pointer">
+                    <div class="h4">Aug 2012 - May 2013</div>
+                    <div class="h5">
+                        IT Service Desk <br>
+                        Student Consultant
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<hr/>
+<div id="videos" class="eachSectionSpace"></div>
+<div class="row">
+    <div class="col col-12">
+        <div class="h1">Videos</div>
+    </div>
+    <div class="col col-12">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L39eF5tQrwE" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+</div>
+
+<script src="../js/changeMenu.js"></script>
+<script src="../js/portfolio.js"></script>
+<script>
+
+	jui.ready(["ui.tooltip"], function (tooltip) {
+		tooltip_3 = tooltip("#tooltip_3", {
+			position: "left",
+			delay: 1000
+		});
+	});
+	function showNaver() {
+		if ($("#naver").css("display") == "none") {
+			$("#naver").show();
+		} else {
+			$("#naver").hide();
+		}
+	}
+
+	function showKsign() {
+		if ($("#ksign").css("display") == "none") {
+			$("#ksign").show();
+		} else {
+			$("#ksign").hide();
+		}
+	}
+	$(document).ready(function () {
+		var chart = jui.include("chart.builder");
+
+		chart("#result", {
+			padding: {},
+			height: 300,
+			theme: "dark",
+			axis: {
+				x: {
+					type: "fullblock",
+					domain: ["", "Basic", "Intermediate", "Advanced"],
+					line: false
+				},
+				y: {
+					type: "range",
+					domain: [0, 100],
+					step: 5,
+					format: function (value) {
+						if (value == 20) {
+							return "SQL";
+						} else if (value == 40) {
+							return "Swift";
+						} else if (value == 60) {
+							return "Javascript";
+						} else if (value == 80) {
+							return "Python";
+						} else if (value == 100) {
+							return "Java";
+						}
+					}
+				},
+				area: {
+					x: "3%"
+				},
+				data: [
+					{Java: 100, Python: 80, Javascript: 60, Swift: 40, SQL: 20},
+					{Java: 100, Python: 80, Javascript: 60, Swift: 40, SQL: 20},
+					{Java: 100, Python: null, Javascript: null, Swift: null, SQL: null},
+					{Java: null, Python: null, Javascript: null, Swift: null, SQL: null}
+				]
+			},
+			brush: [{
+				type: "line",
+				animate: true
+			}, {
+				type: "scatter",
+				hide: false
+			}],
+			widget: [
+				{type: "title", text: "Language Skill", align: "start", dx: -45}
+			],
+			style: {
+				titleFontSize: "16px",
+				titleFontWeight: "bold"
+			}
+		});
+
+
+		var chart2 = jui.include("chart.builder");
+
+		chart("#result2", {
+			padding: {},
+			height: 200,
+			theme: "dark",
+			axis: {
+				x: {
+					type: "fullblock",
+					domain: ["", "Basic", "Intermediate", "Advanced"],
+					line: false
+				},
+				y: {
+					type: "range",
+					domain: [0, 50],
+					step: 2,
+					format: function (value) {
+						if (value == 25) {
+							return "CSS";
+						} else if (value == 50) {
+							return "HTML";
+						}
+					}
+				},
+				area: {
+					x: "3%"
+				},
+				data: [
+					{CSS: 25, HTML: 50},
+					{CSS: 25, HTML: 50},
+					{CSS: null, HTML: 50},
+					{CSS: null, HTML: null}
+				]
+			},
+			brush: [{
+				type: "line",
+				animate: true
+			}, {
+				type: "scatter",
+				hide: false
+			}],
+			widget: [
+				{type: "title", text: "Markup Language Skill", align: "start", dx: -45},
+			],
+			style: {
+				titleFontSize: "16px",
+				titleFontWeight: "bold"
+			}
+		});
+
+
+		var chart3 = jui.include("chart.builder");
+
+		chart("#result3", {
+			padding: {},
+			height: 200,
+			theme: "dark",
+			axis: {
+				x: {
+					type: "fullblock",
+					domain: ["", "Basic", "Intermediate", "Advanced"],
+					line: false
+				},
+				y: {
+					type: "range",
+					domain: [0, 100],
+					step: 4,
+					format: function (value) {
+						if (value == 25) {
+							return "Mybatis";
+						} else if (value == 50) {
+							return "jUnit";
+						} else if (value == 75) {
+							return "Spring";
+						} else if (value == 100) {
+							return "Vue.js";
+						}
+					}
+				},
+				area: {
+					x: "3%"
+				},
+				data: [
+					{Mybatis: 25, jUnit: 50, Spring: 75, Vue: 100},
+					{Mybatis: 25, jUnit: 50, Spring: 75, Vue: 100},
+					{Mybatis: 25, jUnit: 50, Spring: 75, Vue: null},
+					{Mybatis: null, jUnit: null, Spring: null, Vue: null}
+				]
+			},
+			brush: [{
+				type: "line",
+				animate: true
+			}, {
+				type: "scatter",
+				hide: false
+			}],
+			widget: [
+				{type: "title", text: "Framework Skill", align: "start", dx: -45},
+			],
+			style: {
+				titleFontSize: "16px",
+				titleFontWeight: "bold"
+			}
+		});
+	});
+
+</script>
+</body>
+</html>
