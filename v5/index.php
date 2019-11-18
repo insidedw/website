@@ -254,7 +254,7 @@
         .typeString('a full stack developer.')
         .pauseFor(2500)
         .deleteChars(23)
-        .typeString('looking around to find the right thing to fill me up.')
+        .typeString('happy because I do what I want.')
         .pauseFor(2500)
         .start();
 </script>
