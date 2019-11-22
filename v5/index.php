@@ -59,8 +59,14 @@
                             Javascript, React JS, Java, Spring, MySQL, Redis, Storm
                         </div>
                         <a href="https://www.instagram.com/sh_chuck/">
-                            <figure class="image is-32x32">
+                            <figure class="image is-32x32" style="float: left;">
                                 <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png"
+                                     alt="Image">
+                            </figure>
+                        </a>
+                        <a href="https://github.com/insidedw" style="float: left; padding-left: 3px;">
+                            <figure class="image is-32x32">
+                                <img src="./image/github-sign.png"
                                      alt="Image">
                             </figure>
                         </a>
