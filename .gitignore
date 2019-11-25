@@ -15,9 +15,6 @@
 # testing
 /v6/coverage
 
-# production
-/v6/build
-
 # misc
 /v6.DS_Store
 /v6.env.local
