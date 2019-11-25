@@ -3,3 +3,28 @@
 /v2/v2.iml
 /v3/v3.iml
 *.iml
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/v6/node_modules
+/v6/.pnp
+/v6.pnp.js
+
+# testing
+/v6/coverage
+
+# production
+/v6/build
+
+# misc
+/v6.DS_Store
+/v6.env.local
+/v6.env.development.local
+/v6.env.test.local
+/v6.env.production.local
+
+/v6npm-debug.log*
+/v6yarn-debug.log*
+/v6yarn-error.log*
