@@ -1,0 +1,11 @@
+.tabs li.is-active a {
+    border-bottom-color: #ffdd57;
+    border-bottom-width: 2px;
+    color: rgba(0, 0, 0, .7);
+    font-weight: bold;
+}
+
+.tabs li a:hover {
+    border-bottom-color: #ffdd57;
+    border-bottom-width: 2px;
+}
