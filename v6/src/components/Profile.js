@@ -1,6 +1,4 @@
 import React from 'react';
-import github from "../image/github-sign.png";
-
 class Profile extends React.Component {
     constructor(props) {
         super(props);
@@ -31,7 +29,7 @@ class Profile extends React.Component {
                 </a>
                 <a href="https://github.com/insidedw" style={{float: "left", paddingLeft: "3px"}}>
                     <figure className="image is-32x32">
-                        <img src={github}
+                        <img src={"/image/github-sign.png"}
                              alt="Image"/>
                     </figure>
                 </a>

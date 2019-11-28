@@ -4,18 +4,53 @@
   "result": {
     "data": [
       {
-        "image": "wavlogo.png",
+        "image": "/image/vlive_logo.png",
         "title": "Back-End Web Developer",
         "desc": "Web, API, JAVA, Spring",
-        "location": "V Live",
+        "location": "V LIVE",
         "period": "Dec 2019 ~ Present"
       },
       {
-        "image": "wavlogo.png",
+        "image": "/image/wavlogo.png",
         "title": "Full-Stack Web Developer",
-        "desc": "Web, API, Real-time Processing, CMS, Batch\nJavascript, React JS, Java, Spring, MySQL, Redis, Storm",
+        "desc": "Web, API, Real-time Processing, CMS, Batch, Javascript, React JS, Java, Spring, MySQL, Redis, Storm",
         "location": "WAV Media",
-        "period": "Aug 2017 ~ Nov 2019"
+        "period": "Aug 2016 ~ Nov 2019"
+      },
+      {
+        "image": "/image/ksign.png",
+        "title": "Back-End Web Developer",
+        "desc": "SSO (Single Sign-On), EAM (Enterprise Asset Management)",
+        "location": "KSign",
+        "period": "Jun 2014 ~ Jul 2016"
+      },
+      {
+        "image": "/image/mnsu.jpg",
+        "title": "College Graduation",
+        "desc": "Bachelor in Computer Information Technology",
+        "location": "Minnesota State University, Mankato",
+        "period": "May 2014"
+      },
+      {
+        "image": "/image/building.png",
+        "title": "Student Consultant",
+        "desc": "Help customers who have a trouble with anything related to computers. IT Solutions on the first floor of Wissink Hall.",
+        "location": "Academic Computer Center",
+        "period": "Aug 2013 ~ May 2014"
+      },
+      {
+        "image": "/image/testenc.jpg",
+        "title": "Android Application Tester",
+        "desc": "Created thousands of test cases. Run functional, regression, and alpha testing.",
+        "location": "TEST ENC",
+        "period": "Summer of 2013"
+      },
+      {
+        "image": "/image/building.png",
+        "title": "Student Consultant",
+        "desc": "Help customers who have a trouble with anything related to computers around campus.",
+        "location": "IT Solutions",
+        "period": "Summer of 2013"
       }
     ]
   }

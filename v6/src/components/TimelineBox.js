@@ -13,7 +13,7 @@ class TimelineBox extends React.Component {
             <article className="media">
                 <div className="media-left">
                     <figure className="image is-64x64">
-                        <img src={exp.image} alt="Image"/>
+                        <img src={`${exp.image}`} alt="Image"/>
                     </figure>
                 </div>
                 <div className="media-content">
