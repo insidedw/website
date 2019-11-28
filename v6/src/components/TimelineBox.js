@@ -21,7 +21,7 @@ class TimelineBox extends React.Component {
                         <p>
                             <strong>{exp.title}</strong><br/>
                             <small>{exp.period}</small><br/>
-                            {exp.place}<br/>
+                            {exp.location}<br/>
                             {exp.desc}
                         </p>
                     </div>

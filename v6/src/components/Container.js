@@ -2,18 +2,29 @@ import React from 'react';
 import Profile from "./Profile";
 import './../css/tab.css';
 import TimelineBox from "./TimelineBox";
+import timelineData from './../data/timeline';
 
 class Container extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            timelines: [],
+        };
+    }
+
+    componentDidMount() {
+        this.initTimelineData();
+    }
+
+    initTimelineData() {
+        this.setState({
+            timelines: [...this.state.timelines, ...timelineData.result.data],
+        });
     }
 
     render() {
-        const exp = {
-            title: 'Full-Stack Web Developer',
-
-        };
+        const {timelines} = this.state;
+        console.log(this.state.timelines);
         return <section className="section">
             <div className="container is-fullhd">
                 <div className="columns">
@@ -28,7 +39,8 @@ class Container extends React.Component {
                                 <li><a>Videos</a></li>
                             </ul>
                         </div>
-                        <TimelineBox exp={exp}/>
+                        {timelines.map(t => ( <TimelineBox exp={t} key={t.period}/>))}
+
                         <div className="box timeline">
                             <article className="media">
                                 <div className="media-left">
