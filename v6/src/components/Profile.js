@@ -23,14 +23,14 @@ class Profile extends React.Component {
                 <a href="https://www.instagram.com/sh_chuck/">
                     <figure className="image is-32x32" style={{float: "left"}}>
                         <img
-                            src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png"
-                            alt="Image"/>
+                            src={'/image/insta.png'}
+                            alt='instagram'/>
                     </figure>
                 </a>
                 <a href="https://github.com/insidedw" style={{float: "left", paddingLeft: "3px"}}>
                     <figure className="image is-32x32">
                         <img src={"/image/github-sign.png"}
-                             alt="Image"/>
+                             alt='github'/>
                     </figure>
                 </a>
             </div>

@@ -10,6 +10,7 @@ const Footer = () => {
                              height="24"/>
                     </a>
                 </p>
+
             </div>
         </footer>
     );

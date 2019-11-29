@@ -33,9 +33,9 @@ class Container extends React.Component {
                     <div className="column is-four-fifths">
                         <div className="tabs">
                             <ul>
-                                <li><a>Timeline</a></li>
-                                <li><a>Projects</a></li>
-                                <li><a>Videos</a></li>
+                                <li className='is-active'><a>Timeline</a></li>
+                                {/*<li><a>Projects</a></li>
+                                <li><a>Videos</a></li>*/}
                             </ul>
                         </div>
                         {timelines.map(t => ( <TimelineBox exp={t} key={t.period}/>))}
@@ -44,7 +44,7 @@ class Container extends React.Component {
                             <article className="media">
                                 <div className="media-left">
                                     <figure className="image is-64x64">
-                                        <img src="image/wavlogo.png" alt="Image"/>
+                                        <img src="image/wavlogo.png" />
                                     </figure>
                                 </div>
                                 <div className="media-content">
@@ -57,23 +57,23 @@ class Container extends React.Component {
                                         <div className="columns">
                                             <div className="column">
                                                 <figure className="image">
-                                                    <img src="image/wav_web_screenshots/home.png" alt="Image"/>
+                                                    <img src="image/wav_web_screenshots/home.png" />
                                                 </figure>
                                             </div>
                                             <div className="column">
                                                 <figure className="image">
                                                     <img src="image/wav_web_screenshots/artist_dashboard.png"
-                                                         alt="Image"/>
+                                                         />
                                                 </figure>
                                             </div>
                                             <div className="column">
                                                 <figure className="image">
-                                                    <img src="image/wav_web_screenshots/video_end.png" alt="Image"/>
+                                                    <img src="image/wav_web_screenshots/video_end.png" />
                                                 </figure>
                                             </div>
                                             <div className="column">
                                                 <figure className="image">
-                                                    <img src="image/wav_web_screenshots/video_manage.png" alt="Image"/>
+                                                    <img src="image/wav_web_screenshots/video_manage.png" />
                                                 </figure>
                                             </div>
                                         </div>
@@ -81,48 +81,48 @@ class Container extends React.Component {
                                             <div className="column">
                                                 <figure className="image">
                                                     <img src="image/wav_web_screenshots/insight_content.png"
-                                                         alt="Image"/>
+                                                         />
                                                 </figure>
                                             </div>
                                             <div className="column">
                                                 <figure className="image">
                                                     <img src="image/wav_web_screenshots/insight_earning.png"
-                                                         alt="Image"/>
+                                                         />
                                                 </figure>
                                             </div>
                                             <div className="column">
                                                 <figure className="image">
-                                                    <img src="image/wav_web_screenshots/artist_edit.png" alt="Image"/>
+                                                    <img src="image/wav_web_screenshots/artist_edit.png" />
                                                 </figure>
                                             </div>
                                             <div className="column">
                                                 <figure className="image">
-                                                    <img src="image/wav_web_screenshots/video_manage.png" alt="Image"/>
+                                                    <img src="image/wav_web_screenshots/video_manage.png" />
                                                 </figure>
                                             </div>
                                         </div>
                                         <div className="columns">
                                             <div className="column">
                                                 <figure className="image">
-                                                    <img src="image/wav_web_screenshots/upload_end.png" alt="Image"/>
+                                                    <img src="image/wav_web_screenshots/upload_end.png" />
                                                 </figure>
                                             </div>
                                             <div className="column">
                                                 <figure className="image">
                                                     <img src="image/wav_web_screenshots/upload_video_end.png"
-                                                         alt="Image"/>
+                                                         />
                                                 </figure>
                                             </div>
                                             <div className="column">
                                                 <figure className="image">
                                                     <img src="image/wav_web_screenshots/upload_audio_visual_end.png"
-                                                         alt="Image"/>
+                                                         />
                                                 </figure>
                                             </div>
                                             <div className="column">
                                                 <figure className="image">
                                                     <img src="image/wav_web_screenshots/upload_audio_final_end.png"
-                                                         alt="Image"/>
+                                                         />
                                                 </figure>
                                             </div>
                                         </div>
