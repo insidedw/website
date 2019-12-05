@@ -48,7 +48,7 @@ class Container extends React.Component {
 							<ul>
 								<li className={currentTab === 'timeline' ? 'is-active' : ''}><a onClick={() => this.changeTab('timeline')}>Timeline</a></li>
 								<li className={currentTab === 'project' ? 'is-active' : ''}><a onClick={() => this.changeTab('project')}>Projects</a></li>
-								<li className={currentTab === 'video' ? 'is-active' : ''}><a onClick={() => this.changeTab('video')}>Videos</a></li>
+								<li className={currentTab === 'fun' ? 'is-active' : ''}><a onClick={() => this.changeTab('fun')}>Something For Fun</a></li>
 							</ul>
 						</div>
 						{currentTab === 'timeline' ? timelines.map(t => (<TimelineBox exp={t} key={t.period}/>)) : null}
