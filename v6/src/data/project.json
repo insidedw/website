@@ -5,10 +5,94 @@
     "data": [
       {
         "image": "/image/wavlogo.png",
-        "title": "SPA applied",
+        "title": "applied SPA",
         "desc": "From jQuery to react.js",
         "location": "WAV Media",
         "period": "Aug 2019 ~ Oct 2019"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "API - Likes",
+        "desc": "To increase the number of likes of video by hitting a button. Considered caches, real-time process, and capacities.",
+        "location": "WAV Media",
+        "period": "July 2019"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "built Stage Environment",
+        "desc": "To avoid issues in live environment, I've set up stage env.",
+        "location": "WAV Media",
+        "period": "May 2019"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "Embedded Player",
+        "desc": "To make it easy to watch content in other sites.",
+        "location": "WAV Media",
+        "period": "April 2019"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "Optimized Varnish Configuration",
+        "desc": "To increase cache hit-rate on Varnish, I've optimized Varnish Configuration.",
+        "location": "WAV Media",
+        "period": "April 2019"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "Solved Out of Memory",
+        "desc": "Solved using Eclipse' Memory Analyzer(MAT). As the number of users increased, the back-end system has to be refactored. While CMS server read all of users, Out of memory has been occurred.",
+        "location": "WAV Media",
+        "period": "April 2019"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "Updated audio uploading page on WEB",
+        "desc": "",
+        "location": "WAV Media",
+        "period": "March 2019"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "Adding a section for recommended videos in video page on WEB",
+        "desc": "",
+        "location": "WAV Media",
+        "period": "Oct 2018"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "Tried to gathered Facebook & Twitter Data",
+        "desc": "Failed due to SNS Policy changes",
+        "location": "WAV Media",
+        "period": "July 2017"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "Developed management to handle users who abuse data",
+        "desc": "",
+        "location": "WAV Media",
+        "period": "Mar 2017"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "Developed user level process by increasing user's actions",
+        "desc": "real-time process, kafka, storm, redis, and mysql",
+        "location": "WAV Media",
+        "period": "Mar 2017"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "Developed metrics",
+        "desc": "DAU, WAU, MAU, and so on. hadoop, hive, mysql, zepplin",
+        "location": "WAV Media",
+        "period": "Mar 2017"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "Monitoring back-end system while livestream is on",
+        "desc": "",
+        "location": "WAV Media",
+        "period": "Mar 2017"
       }
     ]
   }

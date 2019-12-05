@@ -32,7 +32,7 @@
         "period": "May 2014"
       },
       {
-        "image": "/image/building.png",
+        "image": "/image/buildings.png",
         "title": "Student Consultant",
         "desc": "Help customers who have a trouble with anything related to computers. IT Solutions on the first floor of Wissink Hall.",
         "location": "Academic Computer Center",
@@ -46,7 +46,14 @@
         "period": "Summer of 2013"
       },
       {
-        "image": "/image/building.png",
+        "image": "/image/awards.png",
+        "title": "The Hickory Tech Scholarship",
+        "desc": "",
+        "location": "Minnesota State University, Mankato",
+        "period": "2013-2014 academic year"
+      },
+      {
+        "image": "/image/buildings.png",
         "title": "Student Consultant",
         "desc": "Help customers who have a trouble with anything related to computers around campus.",
         "location": "IT Solutions",
