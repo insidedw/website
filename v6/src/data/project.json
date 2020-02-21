@@ -5,22 +5,63 @@
     "data": [
       {
         "image": "/image/wavlogo.png",
-        "title": "applied SPA",
-        "desc": "From jQuery to react.js",
+        "title": "Applied SPA",
+        "desc": "Web project converted jQuery + JSP into React.",
+        "labels": [
+          "Understood the basic concept of SPA",
+          "Properly used React State and Prop in certain case",
+          "Handled Restful API using axios",
+          "Handled Javascript Event Handler on React",
+          "Experienced Server Side Rendering using Node.JS"
+        ],
+        "achievements": [
+          "70% improvement of Web performance",
+          "Global cache layer improved using API Gateway instead of Varnish"
+        ],
         "location": "WAV Media",
         "period": "Aug 2019 ~ Oct 2019"
       },
       {
         "image": "/image/wavlogo.png",
         "title": "API - Likes",
-        "desc": "To increase the number of likes of video by hitting a button. Considered caches, real-time process, and capacities.",
+        "desc": "Reformed Likes features. As-Is: A user was able to send likes a video more than once. To-Be: A user toggles a like.",
+        "labels": [
+          "Developed API to store data using MySql and Redis. MySql used for persistent. Redis used for cache.",
+          "Developed batch job to aggregate redis data, group data by video, and update video status on MySql"
+        ],
+        "achievements": [
+          "No issues occurred on MySql, Redis, and Java in live env.",
+          "But needs to build a queuing system when thousands of users concurrently toggle like on video"
+        ],
+        "location": "WAV Media",
+        "period": "July 2019"
+      },
+      {
+        "image": "/image/wavlogo.png",
+        "title": "API - Livestream Concurrent Viewers",
+        "desc": "Reformed Likes features. As-Is: A user was able to send likes a video more than once. To-Be: A user toggles a like.",
+        "labels": [
+          "Developed API to store data using MySql and Redis. MySql used for persistent. Redis used for cache.",
+          "Developed batch job to aggregate redis data, group data by video, and update video status on MySql"
+        ],
+        "achievements": [
+          "No issues occurred on MySql, Redis, and Java in live env.",
+          "But needs to build a queuing system when thousands of users concurrently toggle like on video"
+        ],
         "location": "WAV Media",
         "period": "July 2019"
       },
       {
         "image": "/image/wavlogo.png",
         "title": "built Stage Environment",
-        "desc": "To avoid issues in live environment, I've set up stage env.",
+        "desc": "Set up Stage Env before deploying live product",
+        "labels": [
+          "Installed Apache, Tomcat, and dev tools on Cent OS",
+          "Handled logs from Apache and Tomcat using cron command"
+        ],
+        "achievements": [
+          "Double-checked and fixed any unexpected issues that I didn't find out in dev env"
+        ],
         "location": "WAV Media",
         "period": "May 2019"
       },
@@ -28,6 +69,13 @@
         "image": "/image/wavlogo.png",
         "title": "Embedded Player",
         "desc": "To make it easy to watch content in other sites.",
+        "labels": [
+          "Followed oEmbed format."
+        ],
+        "achievements": [
+          "Allowed users to embed video content on third party sites especially Wordpress.",
+          "Increased the number of count on watching video."
+        ],
         "location": "WAV Media",
         "period": "April 2019"
       },

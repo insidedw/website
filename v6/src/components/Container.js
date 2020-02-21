@@ -48,11 +48,10 @@ class Container extends React.Component {
 							<ul>
 								<li className={currentTab === 'timeline' ? 'is-active' : ''}><a onClick={() => this.changeTab('timeline')}>Timeline</a></li>
 								<li className={currentTab === 'project' ? 'is-active' : ''}><a onClick={() => this.changeTab('project')}>Projects</a></li>
-								<li className={currentTab === 'fun' ? 'is-active' : ''}><a onClick={() => this.changeTab('fun')}>Something For Fun</a></li>
 							</ul>
 						</div>
-						{currentTab === 'timeline' ? timelines.map(t => (<TimelineBox exp={t} key={t.period}/>)) : null}
-						{currentTab === 'project' ? projects.map(t => (<ProjectBox exp={t} key={t.period}/>)) : null}
+						{currentTab === 'timeline' ? timelines.map((t, i) => (<TimelineBox exp={t} index={i}/>)) : null}
+						{currentTab === 'project' ? projects.map((t,i) => (<ProjectBox exp={t} index={i}/>)) : null}
 						<div className="box projects" style={{display : "none"}}>
 							<article className="media">
 								<div className="media-left">
