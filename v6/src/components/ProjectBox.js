@@ -22,20 +22,23 @@ class ProjectBox extends React.Component {
 							<strong>{exp.title}</strong><br/>
 							{exp.location}<br/>
 							<small>{exp.period}</small><br/>
-                            <br/>
-                            <strong>Description</strong><br/>
-                            {exp.desc}
+							<br/>
+							<strong>Description</strong><br/>
+							{exp.desc}
 							{exp.labels != null ? <ul>
 								{exp.labels.map(label => <li>{label}</li>)}
 							</ul> : null
 							}
 
-                            <br/>
-                            <strong>Achievement</strong><br/>
-                            {exp.achievements != null ? <ul>
-                                {exp.achievements.map(ac => <li>{ac}</li>)}
-                            </ul> : null
-                            }
+							<br/>
+
+							{exp.achievements != null && exp.achievements.length > 0 ? <strong>Achievement</strong> : null
+							}
+
+							{exp.achievements != null ? <ul>
+								{exp.achievements.map(ac => <li>{ac}</li>)}
+							</ul> : null
+							}
 						</p>
 					</div>
 					<nav className="level is-mobile">

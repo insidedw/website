@@ -5,8 +5,8 @@
     "data": [
       {
         "image": "/image/wavlogo.png",
-        "title": "Applied SPA",
-        "desc": "Web project converted jQuery + JSP into React.",
+        "title": "Web - Single-Page Application",
+        "desc": "Web project converted jQuery & JSP into React.",
         "labels": [
           "Understood the basic concept of SPA",
           "Properly used React State and Prop in certain case",
@@ -53,7 +53,7 @@
       },
       {
         "image": "/image/wavlogo.png",
-        "title": "built Stage Environment",
+        "title": "DevOps - Stage Environment",
         "desc": "Set up Stage Env before deploying live product",
         "labels": [
           "Installed Apache, Tomcat, and dev tools on Cent OS",
@@ -67,7 +67,7 @@
       },
       {
         "image": "/image/wavlogo.png",
-        "title": "Embedded Player",
+        "title": "Web - Embedded Player",
         "desc": "To make it easy to watch content in other sites.",
         "labels": [
           "Followed oEmbed format."
@@ -81,22 +81,34 @@
       },
       {
         "image": "/image/wavlogo.png",
-        "title": "Optimized Varnish Configuration",
+        "title": "Web - Varnish",
         "desc": "To increase cache hit-rate on Varnish, I've optimized Varnish Configuration.",
+        "achievements": [
+          "Applied caches based on location users access.",
+          "Set cache life-cycles depending on API.",
+          "Handled 500 errors to show user-friendly pages."
+        ],
         "location": "WAV Media",
         "period": "April 2019"
       },
       {
         "image": "/image/wavlogo.png",
-        "title": "Solved Out of Memory",
+        "title": "DevOps - Out Of Memory",
         "desc": "Solved using Eclipse' Memory Analyzer(MAT). As the number of users increased, the back-end system has to be refactored. While CMS server read all of users, Out of memory has been occurred.",
+        "achievements": [
+          "Tomcats were not shut down",
+          "Set cache life-cycles depending on API.",
+          "Handled 500 errors to show user-friendly pages."
+        ],
         "location": "WAV Media",
         "period": "April 2019"
       },
       {
         "image": "/image/wavlogo.png",
-        "title": "Updated audio uploading page on WEB",
+        "title": "WEB - Updated Page",
         "desc": "",
+        "achievements": [
+        ],
         "location": "WAV Media",
         "period": "March 2019"
       },
@@ -104,6 +116,8 @@
         "image": "/image/wavlogo.png",
         "title": "Adding a section for recommended videos in video page on WEB",
         "desc": "",
+        "achievements": [
+        ],
         "location": "WAV Media",
         "period": "Oct 2018"
       },
@@ -111,6 +125,8 @@
         "image": "/image/wavlogo.png",
         "title": "Tried to gathered Facebook & Twitter Data",
         "desc": "Failed due to SNS Policy changes",
+        "achievements": [
+        ],
         "location": "WAV Media",
         "period": "July 2017"
       },
@@ -118,6 +134,8 @@
         "image": "/image/wavlogo.png",
         "title": "Developed management to handle users who abuse data",
         "desc": "",
+        "achievements": [
+        ],
         "location": "WAV Media",
         "period": "Mar 2017"
       },
@@ -125,6 +143,8 @@
         "image": "/image/wavlogo.png",
         "title": "Developed user level process by increasing user's actions",
         "desc": "real-time process, kafka, storm, redis, and mysql",
+        "achievements": [
+        ],
         "location": "WAV Media",
         "period": "Mar 2017"
       },
@@ -132,15 +152,43 @@
         "image": "/image/wavlogo.png",
         "title": "Developed metrics",
         "desc": "DAU, WAU, MAU, and so on. hadoop, hive, mysql, zepplin",
+        "achievements": [
+        ],
         "location": "WAV Media",
         "period": "Mar 2017"
       },
       {
         "image": "/image/wavlogo.png",
         "title": "Monitoring back-end system while livestream is on",
+        "achievements": [
+        ],
         "desc": "",
         "location": "WAV Media",
         "period": "Mar 2017"
+      },
+      {
+        "image": "/image/ksign.png",
+        "title": "EAM (Extranet Access Control)",
+        "desc": "Developed & Maintained HTTP-Session-Based EAM",
+        "labels": [
+          "Designed ABAC (Attribute Based Access Control)",
+          "Developed CMS using bootstrap",
+          "Maintained EAM Solution (Server and Agent)"
+        ],
+        "location": "KSign",
+        "period": "June 2014 ~ July 2016"
+      },
+      {
+        "image": "/image/ksign.png",
+        "title": "SSO (Single Sign-On)",
+        "desc": "Developed & Maintained HTTP-Session-Based SSO Solution",
+        "labels": [
+          "Duplicated login prevention",
+          "SSO Federation",
+          "SSO using third party IDP (Google)"
+        ],
+        "location": "KSign",
+        "period": "June 2014 ~ July 2016"
       }
     ]
   }
